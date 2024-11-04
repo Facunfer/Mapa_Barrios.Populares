@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 import geopandas as gpd
-import shapely
 import plotly.express as px
 import plotly.graph_objects as go
 import plotly.figure_factory as ff
 import requests
 import json
+import shapely
 from shapely.geometry import shape
+
 
 geojson = requests.get('https://archivo.habitat.gob.ar/dataset/ssisu/renabap-datos-barrios-geojson').json()
 
